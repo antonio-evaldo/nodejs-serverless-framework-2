@@ -9,6 +9,7 @@ router
   .get("/alunos/:id", AlunoController.listarAlunoPorId)
   .post("/alunos", AlunoController.cadastrarAluno)
   .put("/alunos/:id", AlunoController.atualizarAluno)
-  .delete("/alunos/:id", AlunoController.excluirAluno);
+  .delete("/alunos/:id", AlunoController.excluirAluno)
+  .post("/admin/alunos_batch", AlunoController.cadastrarAlunos);
 
 export default router;
